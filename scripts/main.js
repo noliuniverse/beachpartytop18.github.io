@@ -329,22 +329,7 @@ function swapTrainees(index1, index2) {
 // <original> is the original name as appearing on csv
 // all of it should be lower case
 const alternateRomanizations = {
-  'vu linh dan': ['vu linhdan','vũ Linh đan','debbie','the voice kids'],
-  'xiaoyu': ['xiao yu','zhou xiao yu'],
-  'zhou jiaqi': ['zhou jia qi'],
-  'kwon chaewon': ['eunchae','dia'],
-  'bae yeram': ['elisha','pwmc','play with me club'],
-  'bae haram': ['lydia','play with me club','pwmc'],
-  'jang minju': ['aki','majors'],
-  'park yewon': ['hot issue'],
-  'jin hyeonju': ['belle','cignature'],
-  'nana': ['prikil'],
-  'kotoko': ['prikil'],
-  'jeon jieun': ['busters'],
-  'ahn seungbi': ['an seungbi','play with me club','pwmc'],
-  'oh yoona': ['yoonah','play with me club','pwmc'],
-  'lee sunwoo': ['girls planet 999','gp999'],
-  'choi hyerin': ['girls planet 999','gp999']
+  'numabe shion': ['ona']
 };
 
 // uses the current filter text to create a subset of trainees with matching info
@@ -369,7 +354,7 @@ function filterTrainees(event) {
 
 // Checks if mainString includes a subString and ignores case
 function includesIgnCase(mainString, subString) {
-  return mainString.toLowerCase().includes(subString.toLowerCase());
+  return mainString.toString().toLowerCase().includes(subString.toLowerCase());
 }
 
 // Finds the first blank spot for
